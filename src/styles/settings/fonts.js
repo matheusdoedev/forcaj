@@ -1,5 +1,11 @@
 const fonts = {
-  // put project fonts here
+  fontPrimary: `
+    font-family: 'Nunito', sans-serif;
+  `,
+
+  fontSecondary: `
+    font-family: 'Roboto', sans-serif;
+  `,
 };
 
 export default fonts;
