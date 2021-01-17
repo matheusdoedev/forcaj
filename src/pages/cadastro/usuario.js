@@ -41,9 +41,15 @@ const CadastroUsuario = () => {
         onSubmit={(event) => {
           event.preventDefault();
 
-          handleSignIn(event, () => {
-            router.push("/cadastro/confirmar-email");
-          });
+          if (roles[0] === "estudante") {
+            router.push("/cadastro/estudante");
+          } else if (roles[0] === "mentor") {
+            router.push("/cadastro/mentor");
+          } else if (roles[0] === "doador-de-bolsas") {
+            router.push("/cadastro/doador-de-bolsas");
+          } else {
+            router.push("/cadastro/divulgador-de-vagas");
+          }
         }}
       >
         <h1>Cadastro do usuário</h1>
@@ -91,7 +97,7 @@ const CadastroUsuario = () => {
             checked={roles.includes("estudante")}
             handleChange={(event) => {
               if (event.currentTarget.checked === true) {
-                setRoles([...roles, "estudante"]);
+                setRoles(["estudante"]);
               } else {
                 setRoles(roles.filter((i) => i !== "estudante"));
               }
@@ -102,7 +108,7 @@ const CadastroUsuario = () => {
             checked={roles.includes("mentor")}
             handleChange={(event) => {
               if (event.currentTarget.checked === true) {
-                setRoles([...roles, "mentor"]);
+                setRoles(["mentor"]);
               } else {
                 setRoles(roles.filter((i) => i !== "mentor"));
               }
@@ -112,7 +118,7 @@ const CadastroUsuario = () => {
             checked={roles.includes("doador-de-bolsas")}
             handleChange={(event) => {
               if (event.currentTarget.checked === true) {
-                setRoles([...roles, "doador-de-bolsas"]);
+                setRoles(["doador-de-bolsas"]);
               } else {
                 setRoles(roles.filter((i) => i !== "doador-de-bolsas"));
               }
@@ -124,7 +130,7 @@ const CadastroUsuario = () => {
             checked={roles.includes("divulgador-de-vagas")}
             handleChange={(event) => {
               if (event.currentTarget.checked === true) {
-                setRoles([...roles, "divulgador-de-vagas"]);
+                setRoles(["divulgador-de-vagas"]);
               } else {
                 setRoles(roles.filter((i) => i !== "divulgador-de-vagas"));
               }

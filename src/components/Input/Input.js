@@ -8,8 +8,8 @@ const Input = ({ name, label, value, setValue, ...props }) => {
       value={value}
       name={name}
       id={name}
-      style={{ width: `100%`, marginBottom: `var(--gap-sm)` }}
-      onChange={(e) => setValue(e.target.value)}
+      style={{ width: `60%`, marginBottom: `var(--gap-sm)` }}
+      onChange={(e) => setValue && setValue(e.target.value)}
       {...props}
     />
   );

@@ -10,8 +10,7 @@ const CadastroLayout = ({ children, onSubmit }) => {
       <Header />
       <Container>
         <Grid container spacing={2}>
-          <Grid item container md={3} />
-          <Grid item container md={6}>
+          <Grid item container sm={12}>
             <Form onSubmit={onSubmit}>{children}</Form>
           </Grid>
         </Grid>

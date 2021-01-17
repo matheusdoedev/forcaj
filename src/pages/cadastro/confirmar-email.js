@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Container, Grid } from "@material-ui/core";
 
 import MainLayout from "../../layouts/MainLayout";
@@ -17,7 +19,14 @@ const ConfirmarEmail = () => {
             <h1 style={{ marginBottom: `var(--gap-sm)` }}>
               Envio de confirmação do email enviado.
             </h1>
-            <p>Verifique sua caixa de email.</p>
+            <p style={{ marginBottom: `var(--gap-sm)` }}>
+              Verifique sua caixa de email.
+            </p>
+            <Link href="/">
+              <a style={{ textDecoration: `underline` }}>
+                Voltar para a pagina inicial
+              </a>
+            </Link>
           </Grid>
         </Grid>
       </Container>

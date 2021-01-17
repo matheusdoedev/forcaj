@@ -7,7 +7,8 @@ import border from "../../styles/tools/border";
 
 export const ButtonWrapper = styled.a`
   display: block;
-  padding: var(--gap-xs) var(--gap-md);
+  margin: 0 auto;
+  padding: var(--gap-xs) var(--gap-lg);
   background-color: ${(props) =>
     props.type === "secondary"
       ? `white !important`
