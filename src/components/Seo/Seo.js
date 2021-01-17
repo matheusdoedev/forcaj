@@ -1,25 +1,16 @@
-import Head from "next/head";
+import Helmet from "react-helmet";
 
 const Seo = ({ lang, title, type, description }) => {
   return (
-    <Head>
+    <Helmet>
       <meta property="og:type" content={type} />
       <meta name="robots" content="index, follow" />
       <meta property="og:locale" content={lang} />
-      <meta
-        property="{ lang, title, type, description }og:title"
-        content={title}
-      />
+      <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta name="description" content={description} />
-      <title>matheusdoedev - {title}</title>
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:wght@500;700&display=swap"
-        rel="stylesheet"
-      />
-    </Head>
+      <title>Orienta Jovem - {title}</title>
+    </Helmet>
   );
 };
 
