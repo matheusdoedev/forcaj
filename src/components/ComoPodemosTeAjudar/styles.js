@@ -1,8 +1,13 @@
 import styled from "styled-components";
+
+import { Link } from "react-router-dom";
+
 import colors from "../../styles/settings/colors";
 
+import bgOptionDefault from "../../assets/encontre-mentor.jpg";
+
 export const ComoPodemosTeAjudarWrapper = styled.section`
-  padding: var(--gap-xl) 0;
+  padding: var(--gap-lg) 0;
   background-color: ${colors.primary.color2};
 
   h2 {
@@ -18,10 +23,14 @@ export const OptionCards = styled.div`
   row-gap: var(--gap-sm);
 `;
 
-export const OptionCard = styled.a`
-  height: 200px;
+export const OptionCard = styled(Link)`
+  display: block;
   position: relative;
+  background: url(${bgOptionDefault});
   background-size: cover;
+  width: 100%;
+  height: 200px;
+  transition: 0.3s;
 
   h3 {
     position: absolute;
@@ -30,13 +39,9 @@ export const OptionCard = styled.a`
 
     color: white;
   }
-`;
 
-export const OptionCardRight = styled(OptionCard)`
-  h3 {
-    top: 0;
-    right: 0;
-    bottom: var(--gap-md);
-    left: var(--gap-md);
+  :hover {
+    filter: brightness(85%);
+    transition: 0.3s;
   }
 `;

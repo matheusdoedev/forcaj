@@ -1,4 +1,12 @@
 import { Container, Grid } from "@material-ui/core";
+
+// import encontreMentorImg from "../../../assets/encontre-mentor.jpg";
+// import sejaUmMentorImg from "../../../assets/seja-um-mentor.jpg";
+// import encontreUmaBolsaImg from "../../../../assets/encontre-uma-bolsa.jpg";
+// import doeUmaBolsaImg from "../../assets/doe-uma-bolsa.jpg";
+// import encontreUmaVagaImg from "../../../assets/encontre-uma-vaga.jpg";
+// import oferecaUmaVagaImg from "../../../assets/ofereca-uma-vaga.jpg";
+
 import {
   ComoPodemosTeAjudarWrapper,
   OptionCard,
@@ -8,34 +16,34 @@ import {
 
 const comoPodemosAjudarOptions = [
   {
-    src: "../../../public/assets/encontre-mentor.jpg",
+    src: "",
     label: "Encontre um mentor",
-    href: "",
+    href: "/encontre-um-mentor",
   },
   {
-    src: "../../../public/assets/seja-um-mentor.jpg",
+    src: "",
     label: "Seja um mentor",
-    href: "",
+    href: "/",
   },
   {
-    src: "../../../public/assets/encontre-uma-bolsa.jpg",
+    src: "",
     label: "Encontre uma bolsa",
-    href: "",
+    href: "/encontre-uma-bolsa",
   },
   {
-    src: "../../../public/assets/doe-uma-bolsa.jpg",
+    src: "",
     label: "Doe uma bolsa",
-    href: "",
+    href: "/",
   },
   {
-    src: "../../../public/assets/encontre-uma-vaga.jpg",
+    src: "",
     label: "Encontre uma vaga",
-    href: "",
+    href: "/encontre-uma-vaga",
   },
   {
-    src: "../../../public/assets/ofereca-uma-vaga.jpg",
+    src: "",
     label: "Ofereça uma vaga",
-    href: "",
+    href: "/",
   },
 ];
 
@@ -51,72 +59,11 @@ const ComoPodemosTeAjudar = () => {
       </Container>
 
       <OptionCards>
-        <OptionCard
-          href=""
-          style={{
-            backgroundImage:
-              "url(" +
-              `${require("../../../public/assets/encontre-mentor.jpg")}` +
-              ")",
-          }}
-        >
-          <h3>Encontre um mentor</h3>
-        </OptionCard>
-        <OptionCard
-          href=""
-          style={{
-            backgroundImage:
-              "url(" +
-              `${require("../../../public/assets/seja-um-mentor.jpg")}` +
-              ")",
-          }}
-        >
-          <h3>Seja um mentor</h3>
-        </OptionCard>
-        <OptionCard
-          href=""
-          style={{
-            backgroundImage:
-              "url(" +
-              `${require("../../../public/assets/encontre-uma-bolsa.jpg")}` +
-              ")",
-          }}
-        >
-          <h3>Encontre uma bolsa</h3>
-        </OptionCard>
-        <OptionCard
-          href=""
-          style={{
-            backgroundImage:
-              "url(" +
-              `${require("../../../public/assets/doe-uma-bolsa.jpg")}` +
-              ")",
-          }}
-        >
-          <h3>Doe uma bolsa</h3>
-        </OptionCard>
-        <OptionCard
-          href=""
-          style={{
-            backgroundImage:
-              "url(" +
-              `${require("../../../public/assets/encontre-uma-vaga.jpg")}` +
-              ")",
-          }}
-        >
-          <h3>Encontre uma vaga</h3>
-        </OptionCard>
-        <OptionCard
-          href=""
-          style={{
-            backgroundImage:
-              "url(" +
-              `${require("../../../public/assets/ofereca-uma-vaga.jpg")}` +
-              ")",
-          }}
-        >
-          <h3>Ofereça uma vaga</h3>
-        </OptionCard>
+        {comoPodemosAjudarOptions.map((item, index) => (
+          <OptionCard key={index} src={item.src} to={item.href}>
+            <h3>{item.label}</h3>
+          </OptionCard>
+        ))}
       </OptionCards>
     </ComoPodemosTeAjudarWrapper>
   );

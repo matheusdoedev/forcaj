@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { NavWrapper } from "./styles";
 
 const Nav = () => {
@@ -5,16 +7,16 @@ const Nav = () => {
     <NavWrapper>
       <ul>
         <li>
-          <a href="/sobre">Sobre</a>
+          <Link href="/">Sobre</Link>
         </li>
         <li>
-          <a href="/para-alunos">Para alunos</a>
+          <Link href="/">Para alunos</Link>
         </li>
         <li>
-          <a href="/para-parceiros">Para parceiros</a>
+          <Link href="/">Para parceiros</Link>
         </li>
         <li>
-          <a href="/contato">Contato</a>
+          <Link href="/">Contato</Link>
         </li>
       </ul>
     </NavWrapper>

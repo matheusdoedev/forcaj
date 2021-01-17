@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 export const BrandWrapper = styled(Link)`
   cursor: pointer;

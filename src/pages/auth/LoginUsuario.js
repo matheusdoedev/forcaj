@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useRouter } from "next/router";
+import { useHistory } from "react-router-dom";
 
 import CadastroLayout from "../../layouts/CadastroLayout";
 import Input from "../../components/Input/Input";
@@ -12,7 +12,7 @@ const LoginUsuario = () => {
     AuthContext
   );
 
-  const router = useRouter();
+  const router = useHistory();
 
   return (
     <CadastroLayout

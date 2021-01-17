@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import colors from "../../styles/settings/colors";
 
 export const FormWrapper = styled.form`

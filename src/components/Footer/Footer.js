@@ -13,16 +13,24 @@ const Footer = () => {
             <FooterNav>
               <ul>
                 <li>
-                  <a href="/sobre">Sobre</a>
+                  <a target="BLANK" href="/sobre">
+                    Sobre
+                  </a>
                 </li>
                 <li>
-                  <a href="/para-alunos">Para alunos</a>
+                  <a target="BLANK" href="/para-alunos">
+                    Para alunos
+                  </a>
                 </li>
                 <li>
-                  <a href="/para-parceiros">Para parceiros</a>
+                  <a target="BLANK" href="/para-parceiros">
+                    Para parceiros
+                  </a>
                 </li>
                 <li>
-                  <a href="/contato">Contato</a>
+                  <a target="BLANK" href="/contato">
+                    Contato
+                  </a>
                 </li>
               </ul>
             </FooterNav>

@@ -1,8 +1,7 @@
 import { useContext } from "react";
-import { useRouter } from "next/router";
+import { useHistory } from "react-router-dom";
 
 import Seo from "../../components/Seo/Seo";
-import Form from "../../components/Form/Form";
 import Input from "../../components/Input/Input";
 import Checkbox from "../../components/Checkbox/Checkbox";
 
@@ -26,7 +25,7 @@ const CadastroUsuario = () => {
     setRoles,
   } = useContext(AuthContext);
 
-  const router = useRouter();
+  const router = useHistory();
 
   return (
     <>
@@ -88,7 +87,7 @@ const CadastroUsuario = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            width: `100%`,
+            width: `60%`,
             marginBottom: `var(--gap-xs)`,
           }}
         >

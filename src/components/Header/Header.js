@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <Container>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} alignItems="center">
           <Grid item container xs={4} md={6}>
             <Brand />
           </Grid>

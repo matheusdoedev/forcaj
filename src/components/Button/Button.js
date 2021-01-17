@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { ButtonWrapper } from "./styles";
 
 const Button = ({ content, type, href }) => {
@@ -11,9 +9,9 @@ const Button = ({ content, type, href }) => {
     );
   } else {
     return (
-      <Link href={href}>
-        <ButtonWrapper type={type}>{content}</ButtonWrapper>
-      </Link>
+      <ButtonWrapper to={href} type={type}>
+        {content}
+      </ButtonWrapper>
     );
   }
 };

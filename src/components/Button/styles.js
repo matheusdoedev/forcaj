@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 import colors from "../../styles/settings/colors";
 import border from "../../styles/tools/border";
 
-export const ButtonWrapper = styled.a`
+export const ButtonWrapper = styled(Link)`
   display: block;
   margin: 0 auto;
   padding: var(--gap-xs) var(--gap-lg);

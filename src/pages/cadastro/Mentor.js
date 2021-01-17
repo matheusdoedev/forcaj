@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useRouter } from "next/router";
+import { useHistory } from "react-router-dom";
 
 import Input from "../../components/Input/Input";
 
@@ -8,10 +8,10 @@ import Button from "../../components/Button/Button";
 
 import { AuthContext } from "../../contexts/auth";
 
-const CadastroDoadorDeVaga = () => {
+const CadastroMentor = () => {
   const { handleSignIn } = useContext(AuthContext);
 
-  const router = useRouter();
+  const router = useHistory();
 
   return (
     <CadastroLayout
@@ -23,15 +23,16 @@ const CadastroDoadorDeVaga = () => {
         });
       }}
     >
-      <h1>Cadastro Doador de Bolsa</h1>
+      <h1>Cadastro do Mentor</h1>
 
       <Input name="area" label="Área" required />
-      <Input name="quantidade" label="Quantidade" required />
-      <Input name="empresa" label="Empresa" required />
+      <Input name="data" label="Data" required />
+      <Input name="horario" label="Horário" required />
+      <Input name="experiencia" label="Experiência" required />
 
       <Button type="button" content="Concluir" />
     </CadastroLayout>
   );
 };
 
-export default CadastroDoadorDeVaga;
+export default CadastroMentor;

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import colors from "../settings/colors";
 
 import fonts from "../settings/fonts";
 import breakpoints from "../tools/breakpoints";
@@ -40,6 +41,10 @@ const Elements = createGlobalStyle`
     a {
         ${fonts.fontPrimary};
         font-weight: 500;
+    }
+
+    a:hover {
+        color: ${colors.green};
     }
 
     a,

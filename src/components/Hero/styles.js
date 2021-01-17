@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
+import bgImg from "../../assets/bg-hero.jpg";
+
 export const HeroWrapper = styled.section`
   min-height: 90vh;
   height: 100%;
+  background: url(${bgImg});
   background-repeat: no-repeat;
   background-size: cover;
 

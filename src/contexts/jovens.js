@@ -74,15 +74,15 @@ export const JovensContextComponent = ({ children }) => {
         }).then(r => setJovem(r.data)).catch(err => console.log(err));
     };
 
-    const handlePostCreateJovem = async () => {
-            await api.
+    const handleDeleteJovemPorId = async () => {
+        await api.dele
     };
 
-    const handlePostCreateJovem = async () => {
-            await api.
+    const handleUpdateJovemPorId = async () => {
+        await api.
     };
 
     return(
-
+        <JovensContext.Provider value={{ handlePostCreateJovem, handleGetJovemPorId }}
     );
 }

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 import { Container, Grid } from "@material-ui/core";
 
@@ -22,11 +22,7 @@ const ConfirmarEmail = () => {
             <p style={{ marginBottom: `var(--gap-sm)` }}>
               Verifique sua caixa de email.
             </p>
-            <Link href="/">
-              <a style={{ textDecoration: `underline` }}>
-                Voltar para a pagina inicial
-              </a>
-            </Link>
+            <Link href="/">Voltar para a pagina inicial</Link>
           </Grid>
         </Grid>
       </Container>

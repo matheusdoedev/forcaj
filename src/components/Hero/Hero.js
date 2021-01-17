@@ -6,12 +6,7 @@ import { HeroWrapper } from "./styles";
 
 const Hero = () => {
   return (
-    <HeroWrapper
-      style={{
-        backgroundImage:
-          "url(" + `${require("../../../public/assets/bg-hero.jpg")}` + ")",
-      }}
-    >
+    <HeroWrapper>
       <h1>Conheça a Orienta Jovem</h1>
       <p>
         Plataforma que conecta mentores, bolsas e vagas do mercado de trabalho

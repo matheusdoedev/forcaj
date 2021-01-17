@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useRouter } from "next/router";
+import { useHistory } from "react-router-dom";
 
 import Input from "../../components/Input/Input";
 
@@ -8,10 +8,10 @@ import Button from "../../components/Button/Button";
 
 import { AuthContext } from "../../contexts/auth";
 
-const CadastroEstudante = () => {
+const CadastroDoadorDeVaga = () => {
   const { handleSignIn } = useContext(AuthContext);
 
-  const router = useRouter();
+  const router = useHistory();
 
   return (
     <CadastroLayout
@@ -23,16 +23,15 @@ const CadastroEstudante = () => {
         });
       }}
     >
-      <h1>Cadastro do Estudante</h1>
+      <h1>Cadastro Doador de Bolsa</h1>
 
-      <Input name="age" label="Idade" required />
-      <Input name="escola" label="Escola" required />
-      <Input name="renda" label="Renda" required />
-      <Input name="nis" label="NIS" required />
+      <Input name="area" label="Área" required />
+      <Input name="quantidade" label="Quantidade" required />
+      <Input name="empresa" label="Empresa" required />
 
       <Button type="button" content="Concluir" />
     </CadastroLayout>
   );
 };
 
-export default CadastroEstudante;
+export default CadastroDoadorDeVaga;
