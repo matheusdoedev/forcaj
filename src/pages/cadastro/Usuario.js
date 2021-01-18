@@ -4,9 +4,9 @@ import { useHistory } from "react-router-dom";
 import Seo from "../../components/Seo/Seo";
 import Input from "../../components/Input/Input";
 import Checkbox from "../../components/Checkbox/Checkbox";
+import Button from "../../components/Button/Button";
 
 import CadastroLayout from "../../layouts/CadastroLayout";
-import Button from "../../components/Button/Button";
 
 import { AuthContext } from "../../contexts/auth";
 
@@ -135,7 +135,7 @@ const CadastroUsuario = () => {
             }}
           />
         </div>
-        <Button type="button" content="Enviar" />
+        <Button as="button" type="submit" content="Proxima etapa" />
       </CadastroLayout>
     </>
   );
