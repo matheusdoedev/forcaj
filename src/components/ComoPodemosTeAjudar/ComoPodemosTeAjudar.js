@@ -7,12 +7,7 @@ import { Container, Grid } from "@material-ui/core";
 // import encontreUmaVagaImg from "../../../assets/encontre-uma-vaga.jpg";
 // import oferecaUmaVagaImg from "../../../assets/ofereca-uma-vaga.jpg";
 
-import {
-  ComoPodemosTeAjudarWrapper,
-  OptionCard,
-  OptionCardRight,
-  OptionCards,
-} from "./styles";
+import { ComoPodemosTeAjudarWrapper, OptionCard, OptionCards } from "./styles";
 
 const comoPodemosAjudarOptions = [
   {

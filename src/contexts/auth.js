@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState } from "react";
 
 import api from "../services/api";
 
@@ -45,18 +45,6 @@ export const AuthContextComponent = ({ children }) => {
         console.log(err);
       });
   };
-
-  const handleLogout = async () => {};
-
-  const handleLogins = async () => {};
-
-  const handleResentTokenByEmail = async () => {};
-
-  const handleConfirmAccount = async () => {};
-
-  const handleRestPasswordByEmail = async () => {};
-
-  const handleNewPassword = async () => {};
 
   return (
     <AuthContext.Provider
