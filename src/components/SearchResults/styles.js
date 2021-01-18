@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 import colors from "../../styles/settings/colors";
-import border from "../../styles/tools/border";
 
 export const SearchResultsWrapper = styled.section`
   padding: var(--gap-lg) 0;
