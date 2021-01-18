@@ -12,7 +12,6 @@ import { AuthContext } from "../../contexts/auth";
 
 const CadastroUsuario = () => {
   const {
-    handleSignIn,
     name,
     password,
     email,

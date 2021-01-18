@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Cola aqui jovem
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Plataforma que conecta mentores, bolsas e vagas do mercado de trabalho
+com os jovens de baixa renda.
 
-## Available Scripts
+![Repo Size][repo-size]
+![Top Languages][top-languages]
+![Repo License][repo-license]
+![Repo Version][repo-version]
+![Personal Site][matheus-img]
 
-In the project directory, you can run:
+## Get Started
 
-### `yarn start`
+Install dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+npm install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+yarn
+```
 
-### `yarn test`
+Development:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm run start
 
-### `yarn build`
+yarn start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Build:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+npm run start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+yarn start
+```
 
-### `yarn eject`
+## About
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Uma aplicação feita para o segundo hackaton da CCR, organizado pela Shawee
+- É uma plataforma que tem a ideia de conectar mentores, bolsas e vagas do mercado de trabalho
+  com os jovens de baixa renda.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [React.js](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
+- [Material UI](https://github.com/axios/axios)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Meta
 
-## Learn More
+Authors:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Matheus do É Santos – [Linkedin](https://www.linkedin.com/in/matheusdoe-dev/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+1. Fork it
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- Markdown link & img dfn's -->
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[top-languages]: https://img.shields.io/github/languages/top/matheusdoedev/shortly?style=flat-square
+[repo-size]: https://img.shields.io/github/repo-size/matheusdoedev/shortly?style=flat-square
+[repo-license]: https://img.shields.io/github/license/matheusdoedev/shortly?style=flat-square
+[repo-version]: https://img.shields.io/github/package-json/v/matheusdoedev/shortly?style=flat-square
+[matheus-img]: https://img.shields.io/badge/-matheusdoe.dev-%23811662?style=flat-square
+[matheus-url]: https://matheusdoe.dev

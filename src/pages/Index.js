@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Seo
-        title="Plataforma que conecta mentores, bolsas e vagags do mercado de trabalho com os jovens de baixa renda"
+        title="Orienta Jovem"
         description="Plataforma que conecta mentores, bolsas e vagags do mercado de trabalho com os jovens de baixa renda"
         type="website"
         lang="pt-br"
