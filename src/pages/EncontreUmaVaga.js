@@ -10,7 +10,7 @@ const EncontreUmaBolsa = () => {
   return (
     <>
       <Seo
-        title="Orienta Jovem"
+        title="Encontre uma vaga"
         description="Encontre uma vaga"
         type="website"
         lang="pt-br"

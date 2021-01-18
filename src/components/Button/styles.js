@@ -8,7 +8,7 @@ import border from "../../styles/tools/border";
 export const ButtonWrapper = styled(Link)`
   display: block;
   margin: 0 auto;
-  padding: var(--gap-xs) var(--gap-lg);
+  padding: var(--gap-xs) var(--gap-md);
   background-color: ${(props) =>
     props.type === "secondary"
       ? `white !important`
@@ -16,7 +16,7 @@ export const ButtonWrapper = styled(Link)`
   color: ${(props) =>
     props.type === "secondary"
       ? `${colors.green} !important`
-      : `white !important`};
+      : `${colors.primary.color2} !important`};
   transition: 0.3s;
   border: none;
   ${border.buttonRadius}

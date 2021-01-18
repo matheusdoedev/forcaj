@@ -32,7 +32,7 @@ export const AuthContextComponent = ({ children }) => {
       });
   };
 
-  const handleLogin = async (event, callback) => {
+  const handleLogin = async (callback) => {
     await api
       .post("/auth/login", {
         email,
@@ -40,9 +40,7 @@ export const AuthContextComponent = ({ children }) => {
       })
       .then((r) => {
         localStorage.setItem("token", `Bearer ${r.data.token}`);
-      })
-      .catch((err) => {
-        console.log(err);
+        callback();
       });
   };
 

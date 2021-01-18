@@ -5,7 +5,11 @@ import Seo from "../../components/Seo/Seo";
 
 import MainLayout from "../../layouts/MainLayout";
 
-const ConfirmarEmail = () => {
+import useActiveUser from "../../hooks/useActiveuser";
+
+const EmailConfirmado = () => {
+  useActiveUser();
+
   return (
     <>
       <Seo
@@ -26,12 +30,9 @@ const ConfirmarEmail = () => {
               style={{ flexDirection: `column` }}
             >
               <h1 style={{ marginBottom: `var(--gap-sm)` }}>
-                Envio de confirmação do email enviado.
+                Email validado com sucesso
               </h1>
-              <p style={{ marginBottom: `var(--gap-sm)` }}>
-                Verifique sua caixa de email.
-              </p>
-              <Link to="/">Voltar para a pagina inicial</Link>
+              <Link to="/auth/login-usuario">Vá para a tela de login</Link>
             </Grid>
           </Grid>
         </Container>
@@ -40,4 +41,4 @@ const ConfirmarEmail = () => {
   );
 };
 
-export default ConfirmarEmail;
+export default EmailConfirmado;

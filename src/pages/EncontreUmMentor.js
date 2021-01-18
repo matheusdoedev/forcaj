@@ -10,7 +10,7 @@ const EncontreUmMentor = () => {
   return (
     <>
       <Seo
-        title="Orienta Jovem"
+        title="Encontre um mentor"
         description="Encontre um mentor"
         type="website"
         lang="pt-br"

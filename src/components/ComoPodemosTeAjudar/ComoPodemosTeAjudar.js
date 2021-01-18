@@ -1,42 +1,42 @@
 import { Container, Grid } from "@material-ui/core";
 
-// import encontreMentorImg from "../../../assets/encontre-mentor.jpg";
-// import sejaUmMentorImg from "../../../assets/seja-um-mentor.jpg";
-// import encontreUmaBolsaImg from "../../../../assets/encontre-uma-bolsa.jpg";
-// import doeUmaBolsaImg from "../../assets/doe-uma-bolsa.jpg";
-// import encontreUmaVagaImg from "../../../assets/encontre-uma-vaga.jpg";
-// import oferecaUmaVagaImg from "../../../assets/ofereca-uma-vaga.jpg";
+import encontreMentorImg from "../../assets/encontre-mentor.jpg";
+import sejaUmMentorImg from "../../assets/seja-um-mentor.jpg";
+import encontreUmaBolsaImg from "../../assets/encontre-uma-bolsa.jpg";
+import doeUmaBolsaImg from "../../assets/doe-uma-bolsa.jpg";
+import encontreUmaVagaImg from "../../assets/encontre-uma-vaga.jpg";
+import oferecaUmaVagaImg from "../../assets/ofereca-uma-vaga.jpg";
 
 import { ComoPodemosTeAjudarWrapper, OptionCard, OptionCards } from "./styles";
 
 const comoPodemosAjudarOptions = [
   {
-    src: "",
+    src: encontreMentorImg,
     label: "Encontre um mentor",
     href: "/encontre-um-mentor",
   },
   {
-    src: "",
+    src: sejaUmMentorImg,
     label: "Seja um mentor",
     href: "/",
   },
   {
-    src: "",
+    src: encontreUmaBolsaImg,
     label: "Encontre uma bolsa",
     href: "/encontre-uma-bolsa",
   },
   {
-    src: "",
+    src: doeUmaBolsaImg,
     label: "Doe uma bolsa",
     href: "/",
   },
   {
-    src: "",
+    src: encontreUmaVagaImg,
     label: "Encontre uma vaga",
     href: "/encontre-uma-vaga",
   },
   {
-    src: "",
+    src: oferecaUmaVagaImg,
     label: "Ofereça uma vaga",
     href: "/",
   },
