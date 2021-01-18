@@ -9,9 +9,13 @@ import EncontreUmaBolsa from "./pages/EncontreUmaBolsa";
 import CadastroMentor from "./pages/cadastro/Mentor";
 import CadastroUsuario from "./pages/cadastro/Usuario";
 import CadastroDoadorDeBolsa from "./pages/cadastro/DoadorDeBolsa";
-
 import CadastroDivulgadorDeVagas from "./pages/cadastro/DivulgadorDeVagas";
+import CadastroEstudante from "./pages/cadastro/Estudante";
+
 import LoginUsuario from "./pages/auth/LoginUsuario";
+
+import ConfirmarEmail from "./pages/cadastro/ConfirmarEmail";
+import EmailConfirmado from "./pages/cadastro/EmailConfirmado";
 
 const Routes = () => {
   return (
@@ -29,12 +33,20 @@ const Routes = () => {
           path="/cadastro/divulgador-de-vagas"
           component={CadastroDivulgadorDeVagas}
         />
+        <Route path="/cadastro/estudante" component={CadastroEstudante} />
+
+        <Route path="/cadastro/confirmar-email" component={ConfirmarEmail} />
 
         <Route path="/auth/login-usuario" component={LoginUsuario} />
 
         <Route path="/encontre-um-mentor" component={EncontreUmMentor} />
         <Route path="/encontre-uma-bolsa" component={EncontreUmaBolsa} />
         <Route path="/encontre-uma-vaga" component={EncontreUmaVaga} />
+
+        <Route
+          path="/api/v1/auth/confirmAccount/:hash"
+          component={EmailConfirmado}
+        />
       </Switch>
     </BrowserRouter>
   );
