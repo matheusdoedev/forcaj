@@ -4,14 +4,12 @@ import { Link } from "react-router-dom";
 
 import colors from "../../styles/settings/colors";
 
-import bgOptionDefault from "../../assets/encontre-mentor.jpg";
-
 export const ComoPodemosTeAjudarWrapper = styled.section`
   padding: var(--gap-lg) 0;
-  background-color: ${colors.primary.color2};
+  background-color: white;
 
   h2 {
-    color: white;
+    color: ${colors.primary.color2};
     margin-bottom: var(--gap-lg);
   }
 `;
@@ -26,8 +24,8 @@ export const OptionCards = styled.div`
 export const OptionCard = styled(Link)`
   display: block;
   position: relative;
-  background: url(${bgOptionDefault});
-  background-size: cover;
+  background: ${(props) => props.src && `url(${props.src})`};
+  background-size: fit;
   width: 100%;
   height: 200px;
   transition: 0.3s;
